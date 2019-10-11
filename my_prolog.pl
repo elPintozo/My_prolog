@@ -13,7 +13,7 @@
 
 %% Necesita: una base de conocimientos conformada por hechos y reglas las cuales luego recibiran preguntas
 
-%% ejemplos de pregutas: pregunta(argumento).
+%% ejemplos de pregutas: pregunta(argumento) - functor(argumento).
 %% pregunta compuesta (conjuncion de objetivos):  pregunta_1(argumento/constante), pregunta_2(argumento/constante). #if ... and ... true/false
 %% pregunta compuesta (conjuncion de objetivos):  pregunta_1(argumento); pregunta_2(argumento). #if ... or ... true/false
 
@@ -32,9 +32,18 @@ persona(persona_5).
 es_par(X):- 0 is X mod 2.
 
 %% esta compuesto por PREGUNTAS 
-%% ejemplos: ? - pregunta_1(argumento). # return false
+%% ejemplos: ? - persona(X). # si presionas ; continua retornando / si presionas el . se termina el return
+
+%% Tipos de respuestas de Prolog: true. / false. / valor...
+
+%% Mecanismos de inferencia:
+%% Unificacion: Une y compara cada vez que se hace una consulta
+%% Backtracking:-
+%% Arboles SLD:-
 
 
 %% Observaciones:
 %% las variables comienzan con Mayuscula
 %% las constantes van con minuscula
+%% Abrir un archivo: $ swipl my_prolog.pl
+%% Cerrar un archivo: ?- halt.
