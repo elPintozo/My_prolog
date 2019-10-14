@@ -47,3 +47,6 @@ es_par(X):- 0 is X mod 2.
 %% las constantes van con minuscula
 %% Abrir un archivo: $ swipl my_prolog.pl
 %% Cerrar un archivo: ?- halt.
+
+
+
